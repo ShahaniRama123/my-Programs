@@ -1,0 +1,46 @@
+<html>
+    <body>
+            <div>
+
+                </div>
+            
+        <style>
+             td{
+        border:1px solid black;
+        cursor:pointer;
+        text-align: center;
+
+    }
+    table{
+        border:2px solid blue;
+    }
+        </style>
+    
+
+<script>
+
+    
+ let counter=0;
+
+let container = document.querySelector("div");
+let html= "<table>";
+
+
+
+let user1= prompt("How Many rows? ");
+let user2= prompt("How many Column? ");
+
+for(let i=0;i<user1;i++){
+    html += "<tr>";
+    for(x=0;x<user2;x++){
+        counter++;
+        html +=`<td class="lottery">`+counter+`</td>`;
+    }
+    html += "</tr>";
+}
+html +="</table>";
+container.innerHTML = html;
+
+</script>
+</body>
+</html>
